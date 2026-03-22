@@ -5,16 +5,16 @@ const cookieparser = require('cookie-parser');
 const authROUTER = require("./routes/auth.route");
 const movieROUTER = require("./routes/movie.route");
 
-app.use(
-  cors({
-    origin: "https://project-1-puce-three.vercel.app", 
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-  })
-);
+const corsOptions = {
+  origin: "https://project-1-puce-three.vercel.app",
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+};
 
-app.options('*', cors());
+app.use(cors(corsOptions));
+
+app.options('/{*path}', cors(corsOptions));
 
 app.use(express.json());
 app.use(cookieparser());
