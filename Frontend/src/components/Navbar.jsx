@@ -15,7 +15,7 @@ const Navbar = ({ activeMenu, setActiveMenu, onSearch, toggleTheme, theme, user,
   }, []);
 
   const handleSearchSubmit = (e) => {
-    e.preventDefault();
+    if (e && e.preventDefault) e.preventDefault();
     if (searchInput.trim()) {
       onSearch(searchInput);
       setActiveMenu('Search');
@@ -59,7 +59,7 @@ const Navbar = ({ activeMenu, setActiveMenu, onSearch, toggleTheme, theme, user,
               style={{ display: isSearchActive ? 'block' : 'none' }}
             />
             <Search 
-              className="icon" 
+              className="icon " 
               size={20} 
               onClick={() => {
                 if (isSearchActive && searchInput) {

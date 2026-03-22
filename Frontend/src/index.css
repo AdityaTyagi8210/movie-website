@@ -109,19 +109,20 @@ a {
 }
 
 /* Scrollbar */
+/* Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg-primary); 
+  background: transparent !important;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--bg-tertiary); 
+  background: transparent;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent); 
+  background: var(--accent);
 }
 
 /* Animations */
