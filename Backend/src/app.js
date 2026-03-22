@@ -8,7 +8,7 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: "*",
+    origin: "https://project-1-puce-three.vercel.app/",
     credentials: true,
   })
 );
