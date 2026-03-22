@@ -49,7 +49,8 @@ function App() {
   // Helper to fetch movies from backend API (deduplicates by imdbID)
   const fetchMovies = async (query, type = '') => {
     try {
-      let url = `/api/movies/search?q=${encodeURIComponent(query)}`;
+      const BASE_URL = "https://movie-website-twvm.onrender.com";
+let url = `${BASE_URL}/api/movies/search?q=${encodeURIComponent(query)}`;
       if (type) url += `&type=${type}`;
       const response = await fetch(url);
       if (!response.ok) throw new Error("Network error or Rate Limit");

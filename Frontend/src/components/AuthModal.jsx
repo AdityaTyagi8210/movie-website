@@ -26,9 +26,11 @@ const AuthModal = ({ isOpen, onClose, initialView, onLoginSuccess }) => {
     setError('');
     setLoading(true);
 
-    const url = isLoginView 
-      ? 'http://localhost:3000/api/auth/login' 
-      : 'http://localhost:3000/api/auth/register';
+    const BASE_URL = "https://movie-website-twvm.onrender.com";
+
+const url = isLoginView 
+  ? `${BASE_URL}/api/auth/login`
+  : `${BASE_URL}/api/auth/register`;
 
     const payload = isLoginView 
       ? { username: formData.identifier, email: formData.identifier, password: formData.password }
