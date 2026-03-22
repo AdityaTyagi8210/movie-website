@@ -41,7 +41,7 @@ const url = isLoginView
         headers: {
           'Content-Type': 'application/json'
         },
-        withCredentials: true
+        // withCredentials: true
       });
       // Mock or real user object
       const userObj = {
