@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, Play } from 'lucide-react';
+import { Star, Play, Info } from 'lucide-react';
 
 const MovieCard = ({ movie, onClick }) => {
   const handleClick = (e) => {
@@ -8,8 +8,6 @@ const MovieCard = ({ movie, onClick }) => {
     if (onClick) onClick(movie);
   };
 
-  // If rating is not directly on movie via search API, we skip spamming the API 
-  // to avoid hitting free-tier rate limits and crashing the app.
   const rating = movie.imdbRating && movie.imdbRating !== "N/A" ? movie.imdbRating : null;
 
   return (
@@ -32,10 +30,16 @@ const MovieCard = ({ movie, onClick }) => {
         <p className="movie-list-item-desc">
           {movie.Year} · {movie.Type === 'series' ? 'Series' : 'Movie'}
         </p>
-        <button className="movie-list-item-button" onClick={handleClick}>
-          <Play size={12} style={{ display: 'inline', marginRight: 4 }} />
-          Watch
-        </button>
+        <div style={{ display: 'flex', gap: '8px', marginTop: '8px' }}>
+          <button className="movie-list-item-button" onClick={handleClick} style={{ flex: 1, justifyContent: 'center' }}>
+            <Play size={12} style={{ display: 'inline', marginRight: 4 }} />
+            Watch
+          </button>
+          <button className="movie-list-item-button" onClick={handleClick} style={{ flex: 1, justifyContent: 'center', background: 'rgba(255,255,255,0.1)' }}>
+            <Info size={12} style={{ display: 'inline', marginRight: 4 }} />
+            Info
+          </button>
+        </div>
       </div>
     </div>
   );

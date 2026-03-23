@@ -1,5 +1,5 @@
 // Central API helper for movie-related requests
-const BASE = '/api/movies';
+const BASE = 'https://movie-website-1-1.onrender.com/api/movies';
 
 export async function searchMovies(query) {
   const res = await fetch(`${BASE}/search?q=${encodeURIComponent(query)}`);
