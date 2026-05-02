@@ -1,0 +1,13 @@
+/Users/aditya/flame/movie-website/Backend-Java/src/main/java/com/movie/service/AuthService.java
+/Users/aditya/flame/movie-website/Backend-Java/src/main/java/com/movie/repository/UserRepository.java
+/Users/aditya/flame/movie-website/Backend-Java/src/main/java/com/movie/dto/LoginRequest.java
+/Users/aditya/flame/movie-website/Backend-Java/src/main/java/com/movie/config/SecurityConfig.java
+/Users/aditya/flame/movie-website/Backend-Java/src/main/java/com/movie/dto/RegisterRequest.java
+/Users/aditya/flame/movie-website/Backend-Java/src/main/java/com/movie/BackendJavaApplication.java
+/Users/aditya/flame/movie-website/Backend-Java/src/main/java/com/movie/controller/MovieController.java
+/Users/aditya/flame/movie-website/Backend-Java/src/main/java/com/movie/config/CorsConfig.java
+/Users/aditya/flame/movie-website/Backend-Java/src/main/java/com/movie/service/MovieService.java
+/Users/aditya/flame/movie-website/Backend-Java/src/main/java/com/movie/dto/AuthResponse.java
+/Users/aditya/flame/movie-website/Backend-Java/src/main/java/com/movie/util/JwtUtil.java
+/Users/aditya/flame/movie-website/Backend-Java/src/main/java/com/movie/model/User.java
+/Users/aditya/flame/movie-website/Backend-Java/src/main/java/com/movie/controller/AuthController.java

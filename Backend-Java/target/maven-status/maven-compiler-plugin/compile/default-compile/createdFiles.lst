@@ -1,0 +1,16 @@
+com/movie/config/CorsConfig.class
+com/movie/controller/MovieController$ErrorResponse.class
+com/movie/controller/AuthController.class
+com/movie/config/SecurityConfig.class
+com/movie/model/User.class
+com/movie/dto/LoginRequest.class
+com/movie/controller/MovieController.class
+com/movie/dto/AuthResponse$UserDto.class
+com/movie/BackendJavaApplication.class
+com/movie/dto/AuthResponse.class
+com/movie/service/MovieService.class
+com/movie/dto/RegisterRequest.class
+com/movie/repository/UserRepository.class
+com/movie/service/AuthService.class
+com/movie/service/AuthService$ErrorResponse.class
+com/movie/util/JwtUtil.class
